@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from "react";
 import "./Button.css";
 
-interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "success" | "danger";
 }
 
