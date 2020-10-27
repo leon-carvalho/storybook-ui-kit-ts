@@ -1,3 +1,6 @@
+import React from "react";
+import GlobalStyles from "../src/shared/global.styles";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   options: {
@@ -7,3 +10,12 @@ export const parameters = {
         : a[1].id.localeCompare(b[1].id, undefined, { numeric: true }),
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <>
+      <Story />
+      <GlobalStyles />
+    </>
+  ),
+];
